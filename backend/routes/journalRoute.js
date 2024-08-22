@@ -67,7 +67,7 @@ router.put('/openai/:day', async(request,response) => {
     try{
         const { id } = request.params;
         const { entry } = request.body;
-        const openai = new OpenAI({apiKey: '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'});
+        const openai = new OpenAI();
         const completion = await openai.chat.completions.create({
             model: "gpt-4o-mini",
             messages: [
