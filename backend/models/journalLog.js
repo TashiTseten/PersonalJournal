@@ -14,6 +14,10 @@ const logSchema = mongoose.Schema(
             type: String,
             required:true,
         },
+        advice:{
+            type: String,
+            required:false
+        }
     },
     {
         timestamps: true,
