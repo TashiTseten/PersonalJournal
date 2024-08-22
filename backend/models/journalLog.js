@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 
-const LogSchema = mongoose.Schema(
+const logSchema = mongoose.Schema(
     {
         day:{
-            type: Date,
+            type: String,
             required: true,
         },
         title:{
@@ -20,4 +20,4 @@ const LogSchema = mongoose.Schema(
     }
 );
 
-export const Log = mongoose.model('Journal', { LogSchema });
+export const Logs = mongoose.model('Journal', logSchema);
